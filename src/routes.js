@@ -8,8 +8,10 @@ export const urls = {
   list: '/list',
 }
 
-export const routes = (
+const routes = (
   <Route path={urls.index} component={Index}>
     <IndexRoute component={Index} />
   </Route>
 )
+
+export default routes

@@ -12,20 +12,22 @@ import Divider from 'material-ui/Divider'
 import Menu from 'material-ui/Menu'
 import MenuItem from 'material-ui/MenuItem'
 
+import baseStyles from '../../base/base.scss'
+
 const SideBar = () => {
   return (
     <Menu style={{ width: '300px' }}>
-      <MenuItem primaryText="Dashboard" leftIcon={<DashboardIcon />} />
-      <MenuItem primaryText="Users" leftIcon={<UsersIcon />} />
+      <MenuItem className={baseStyles.secondaryButton} primaryText="Dashboard" leftIcon={<DashboardIcon />} />
+      <MenuItem className={baseStyles.secondaryButton} primaryText="Users" leftIcon={<UsersIcon />} />
       <Divider />
-      <MenuItem primaryText="Transport operators" leftIcon={<OperatorsIcon />} />
-      <MenuItem primaryText="Pending invitations" leftIcon={<PendingInvitationsIcon />} />
-      <MenuItem primaryText="Exports" leftIcon={<ExportsIcon />} />
-      <MenuItem primaryText="Subscriptions" leftIcon={<SubscriptionsIcon />} />
+      <MenuItem className={baseStyles.secondaryButton} primaryText="Transport operators" leftIcon={<OperatorsIcon />} />
+      <MenuItem className={baseStyles.secondaryButton} primaryText="Pending invitations" leftIcon={<PendingInvitationsIcon />} />
+      <MenuItem className={baseStyles.secondaryButton} primaryText="Exports" leftIcon={<ExportsIcon />} />
+      <MenuItem className={baseStyles.secondaryButton} primaryText="Subscriptions" leftIcon={<SubscriptionsIcon />} />
       <Divider />
-      <MenuItem primaryText="System Events" leftIcon={<SystemsEventIcon />} />
-      <MenuItem primaryText="Errors" leftIcon={<ErrorsIcon />} />
-      <MenuItem primaryText="Feedback" leftIcon={<FeedbackIcon />} />
+      <MenuItem className={baseStyles.secondaryButton} primaryText="System Events" leftIcon={<SystemsEventIcon />} />
+      <MenuItem className={baseStyles.secondaryButton} primaryText="Errors" leftIcon={<ErrorsIcon />} />
+      <MenuItem className={baseStyles.secondaryButton} primaryText="Feedback" leftIcon={<FeedbackIcon />} />
     </Menu>
   )
 }

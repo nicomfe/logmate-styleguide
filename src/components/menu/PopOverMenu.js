@@ -6,7 +6,8 @@ import FeedbackIcon from 'material-ui/svg-icons/communication/rss-feed'
 import IdeaIcon from 'material-ui/svg-icons/action/lightbulb-outline'
 import HappyIcon from 'material-ui/svg-icons/image/tag-faces'
 
-import { IconSupportButton } from '../../components/buttons'
+import { IconSupportButton } from '../buttons'
+import baseStyles from '../../base/base.scss'
 
 class PopOverMenu extends React.Component {
 
@@ -34,9 +35,9 @@ class PopOverMenu extends React.Component {
         onRequestClose={this.handleRequestClose}
       >
         <Menu>
-          <MenuItem leftIcon={<FeedbackIcon />} primaryText="Feedback" />
-          <MenuItem leftIcon={<IdeaIcon />} primaryText="Suggest an idea?" />
-          <MenuItem leftIcon={<HappyIcon />} primaryText="Satisfied?" />
+          <MenuItem className={baseStyles.secondaryButton} leftIcon={<FeedbackIcon />} primaryText="Feedback" />
+          <MenuItem className={baseStyles.secondaryButton} leftIcon={<IdeaIcon />} primaryText="Suggest an idea?" />
+          <MenuItem className={baseStyles.secondaryButton} leftIcon={<HappyIcon />} primaryText="Satisfied?" />
         </Menu>
       </Popover>
     </div>)

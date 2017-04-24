@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import './colors.scss';
 
 body, html {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.5px;
-  background-color: #E1E2E1;
+  background-color: $primary;
+  color: rgba(0,0,0,.54);
 }

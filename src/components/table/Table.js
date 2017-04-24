@@ -1,10 +1,12 @@
 import React from 'react'
 import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui/Table'
 
+import styles from './styles.scss'
+
 const CustomTable = () => {
   return (
     <Table>
-      <TableHeader>
+      <TableHeader className={styles.tableHeader}>
         <TableRow>
           <TableHeaderColumn>Driver</TableHeaderColumn>
           <TableHeaderColumn>CVIU</TableHeaderColumn>

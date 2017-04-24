@@ -1,0 +1,9 @@
+@import '../../base/colors.scss';
+
+.tableHeader {
+  th {
+    color: $text-color !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+  }
+}

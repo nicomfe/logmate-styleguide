@@ -8,19 +8,19 @@ import styles from './styles.scss'
 const StyleGuideContent = (props) => {
   const { children, title, description } = props
   return (<Paper className={baseStyles.container} zDepth={2}>
-    <p>
+    <div>
       <h2>{title}</h2>
       <div className={styles.description}>{description}</div>
       <div className={styles.divider}><Divider /></div>
       {children}
-    </p>
+    </div>
   </Paper>)
 }
 
 StyleGuideContent.propTypes = {
-  children: React.PropTypes.element.isRequired,
+  children: React.PropTypes.oneOfType([React.PropTypes.element, React.PropTypes.array]),
   title: React.PropTypes.string,
-  description: React.PropTypes.string,
+  description: React.PropTypes.element,
 }
 
 export default StyleGuideContent

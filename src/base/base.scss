@@ -1,12 +1,14 @@
+@import './colors.scss';
+
 .container {
   padding: 15px;
   margin: 15px 0;
 }
 
 .secondaryButton {
-  color: rgba(0,0,0,.74) !important;
+  color: $secondary !important;
   svg {
-    fill: rgba(0,0,0,.74) !important;
+    fill: $secondary !important;
   }
 }
 
