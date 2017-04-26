@@ -12,6 +12,7 @@
   "dependencies": {
     "chart.js": "2.5.0",
     "immutable": "3.8.1",
+    "jsx-to-string": "1.1.0",
     "material-ui": "0.17.4",
     "react": "15.3.2",
     "react-chartjs-2": "2.0.5",

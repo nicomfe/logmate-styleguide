@@ -1,7 +1,22 @@
+@import '../../base/colors.scss';
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 .description {
   margin: 10px 0;
 }
 
 .divider {
   margin-bottom: 10px;
+}
+
+.sourceCodeContent {
+  font-family: 'Source Code Pro', monospace;
+  white-space: pre;
+  background-color: $disabledColor;
+  opacity: 0.8;
+  font-size: 14px;
+  border: solid 1px $primary2Color;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 15px;
 }
