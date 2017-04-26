@@ -8,6 +8,7 @@ import SideBarContainer from './SideBarContainer'
 import PopOverMenuContainer from './PopOverMenuContainer'
 import TableContainer from './TableContainer'
 import ChartContainer from './ChartContainer'
+import FormContainer from './FormContainer'
 
 const IndexContainer = () => {
   return (
@@ -19,6 +20,7 @@ const IndexContainer = () => {
       <PopOverMenuContainer />
       <TableContainer />
       <ChartContainer />
+      <FormContainer />
     </div>
   )
 }

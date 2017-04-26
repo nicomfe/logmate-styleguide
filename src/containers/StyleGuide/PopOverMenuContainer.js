@@ -1,6 +1,6 @@
 import React from 'react'
 
-import StyleGuideContent from '../../components/StyleGuide/StyleGuideContent'
+import StyleGuideContent from '../../components/styleGuide/StyleGuideContent'
 import PopOverMenu from '../../components/menu/PopOverMenu'
 
 const PopOverMenuContainer = () => {
