@@ -1,7 +1,7 @@
 import React from 'react'
+import AppBar from 'material-ui/AppBar'
 
 // components
-import Menu from '../../components/menu/Menu'
 import RaisedButtonsContainer from './RaisedButtonsContainer'
 import FlatButtonsContainer from './FlatButtonsContainer'
 import SideBarContainer from './SideBarContainer'
@@ -11,20 +11,25 @@ import ChartContainer from './ChartContainer'
 import FormContainer from './FormContainer'
 import NotificationContainer from './NotificationContainer'
 
-const IndexContainer = () => {
-  return (
-    <div>
-      <Menu />
-      <RaisedButtonsContainer />
-      <FlatButtonsContainer />
-      <SideBarContainer />
-      <PopOverMenuContainer />
-      <TableContainer />
-      <ChartContainer />
-      <FormContainer />
-      <NotificationContainer />
-    </div>
-  )
+class IndexContainer extends React.Component {
+  render() {
+    return (
+      <div>
+        <AppBar
+          title="Logmate Styleguide"
+          iconClassNameRight="muidocs-icon-navigation-expand-more"
+        />
+        <RaisedButtonsContainer />
+        <FlatButtonsContainer />
+        <SideBarContainer />
+        <PopOverMenuContainer />
+        <TableContainer />
+        <ChartContainer />
+        <FormContainer />
+        <NotificationContainer />
+      </div>
+    )
+  }
 }
 
 IndexContainer.propTypes = {}

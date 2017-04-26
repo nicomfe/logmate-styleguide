@@ -17,18 +17,20 @@ class NotificationContainer extends React.Component {
   render() {
     const { notificationOpen } = this.state
     return (
-      <StyleGuideContent
-        title="Notifications"
-        description={<small>
-          For the notifications we will use a snack bar
-        </small>}
-      >
-        <PrimaryButton
-          onClick={this.handleTouchTap}
-          label="show notification"
-        />
-        <NotificationBar open={notificationOpen} message="This is the notification bar message" />
-      </StyleGuideContent>
+      <div id="notification">
+        <StyleGuideContent
+          title="Notifications"
+          description={<small>
+            For the notifications we will use a snack bar
+          </small>}
+        >
+          <PrimaryButton
+            onClick={this.handleTouchTap}
+            label="show notification"
+          />
+          <NotificationBar open={notificationOpen} message="This is the notification bar message" />
+        </StyleGuideContent>
+      </div>
     )
   }
 }
