@@ -9,6 +9,7 @@ import PopOverMenuContainer from './PopOverMenuContainer'
 import TableContainer from './TableContainer'
 import ChartContainer from './ChartContainer'
 import FormContainer from './FormContainer'
+import NotificationContainer from './NotificationContainer'
 
 const IndexContainer = () => {
   return (
@@ -21,6 +22,7 @@ const IndexContainer = () => {
       <TableContainer />
       <ChartContainer />
       <FormContainer />
+      <NotificationContainer />
     </div>
   )
 }

@@ -7,7 +7,7 @@ const TableContainer = () => {
   return (
     <StyleGuideContent
       title="Table"
-      description={<small>This table can replaced all the tables on the admin sites</small>}
+      description={<small>Table for displaying list of drivers, violations, etc</small>}
     >
       <Table />
     </StyleGuideContent>

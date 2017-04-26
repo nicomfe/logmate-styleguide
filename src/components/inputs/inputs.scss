@@ -1,0 +1,10 @@
+.formGroup {
+  display: flex;
+  align-items: center;
+  small {
+    width: 150px;
+    margin-right: 15px;
+    text-align: right;
+    font-weight: bold;
+  }
+}

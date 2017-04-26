@@ -10,11 +10,11 @@ const materialUiTheme = {
     accent1Color: '#5cb85c',
     textColor: '#333333',
     borderColor: '#e7e7e7',
-    disabledColor: 'rgba(0,0,0,.54)',
+    disabledColor: '#e7e7e7',
   },
   snackbar: {
-    textColor: 'inherit',
-    backgroundColor: 'inherit',
+    textColor: '#fff',
+    backgroundColor: '#005c95',
   },
 }
 
